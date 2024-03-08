@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+    <title>Virtual Library</title>
+</head>
+<body>
+    {% block header %}
+
+    <header class="container">
+        <nav>
+            <ul class="nav bg-info">
+                <a href="{% url 'library:home' %}" class="nav-link link-light">Home</a>
+                <a href="#" class="nav-link link-light">About</a>
+                <a href="#" class="nav-link link-light">Books</a>
+            </ul>
+        </nav>
+    </header>
+
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+</html>
