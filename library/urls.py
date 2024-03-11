@@ -5,4 +5,6 @@ app_name = 'library'
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
+    path('books/', views.books, name='books'),
 ]
